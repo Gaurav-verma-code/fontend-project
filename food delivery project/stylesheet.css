@@ -1,0 +1,296 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.n {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.logo {
+  margin: 12px 55px;
+}
+.logo img {
+  height: 78px;
+  margin: 6px 14px;
+  border-radius: 38px;
+}
+.u {
+  display: flex;
+}
+.u li {
+  list-style: none;
+  margin: 0px 15px;
+}
+.u li a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
+.u li a:hover {
+  background-color: white;
+  color: black;
+}
+.n::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#main {
+  background: url(Project-2/Project-2/bg1.jpg) no-repeat center center/cover;
+  opacity: 0.9;
+}
+#s {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  justify-content: center;
+  padding: 4px 200px;
+}
+#s h1 {
+  color: white;
+  padding-bottom: 20px;
+  font-size: 2rem;
+  font-family: "Lilita One", cursive;
+}
+#s p {
+  color: white;
+  font-size: 1rem;
+}
+#s button {
+  background-color: rgb(117, 23, 23);
+  border: 2px solid white;
+  color: white;
+  padding: 8px;
+  border-radius: 25px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+#s2 {
+  text-align: center;
+}
+#s2 h1 {
+  padding: 20px;
+  font-family: "Noto Serif", serif;
+  font-size: 2rem;
+}
+#services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+#box {
+  border: 2px solid red;
+  height: 200px;
+  width: 500px;
+  padding: 20px;
+  margin: 0px 20px;
+  border-radius: 20px;
+}
+#box img {
+  height: 106px;
+  width: 150px;
+}
+#box h2 {
+  font-family: "Noto Serif", serif;
+  font-size: 1.5rem;
+}
+#box p {
+  font-family: "Noto Serif", serif;
+}
+#client {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  height: 300px;
+  position: relative;
+  margin-top: 22px;
+}
+#client::before {
+  content: "";
+  position: absolute;
+  background: url(./Project-2/Project-2/bg.jpg) no-repeat top center/cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+#client h2 {
+  opacity: 1;
+  font-family: "Noto Serif", serif;
+  padding: 40px;
+}
+.client1div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clientc {
+  margin: 0px 80px;
+}
+.clientc img {
+  height: 134px;
+  width: 212px;
+  opacity: 2;
+}
+#contact {
+  position: relative;
+  height: 600px;
+}
+#contact h1 {
+  text-align: center;
+  font-family: "Lilita One", cursive;
+  font-size: 2rem;
+  height: 50px;
+
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  background: url("./Project-2/Project-2/contact.jpg") no-repeat center
+    center/cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 1.2;
+}
+.divc input,
+.divc textarea{
+  width: 100%;
+  padding: 1rem;
+}
+.divf{
+  width: 500px;
+}
+
+.divf label {
+  font-size: 1.5rem;
+  position: relative;
+  font-family: "Lilita One", cursive;
+}
+.divc{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  height: 100px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer h2{
+  font-size: 4rem;
+
+}
+/* responsive */
+@media only screen and (max-width:1400px)
+{
+  #s{
+    padding: 0px 140px;
+  }
+  .clientc{
+    margin: 0px 50px;
+  }
+}
+@media only screen and (max-width:1200px)
+{
+  .clientc{
+    margin: 0px 20px;
+  }
+  #s{
+    padding: 0px 100px;
+  }
+  #s p{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width:992px)
+{
+ #Services{
+  flex-direction: column;
+      }
+ #s{
+ padding: 0px 110px;
+      }
+#client{
+  overflow: hidden;
+      }
+.clientc{
+  margin: 4px;
+}
+.clientc img{
+  height: 100px;
+  width: 155px;
+}
+footer h2{
+  font-size: 3rem;
+}
+}
+@media only screen and (max-width:768px)
+{
+  .n{
+    flex-direction: column;
+    }
+  #s h1{
+    text-align: center;
+  }
+  .clientc img {
+    height: 95px;
+    width: 130px;
+}
+footer h2{
+  font-size: 2rem;
+}
+
+
+}
+@media only screen and (max-width:576px)
+{
+  .n{
+  flex-direction: column;
+  }
+ .clientc{
+  overflow: hidden;
+ }
+#s{
+  padding: 0px 0px;
+}
+#box{
+  padding: 0px;
+}
+.clientc img{
+  height:85px;
+  width: 120px;
+}
+footer h2{
+  font-size: 1rem;
+}
+
+}
+/* @media only screen and (max-width:150px)
+{
+#box{
+  width: 300px;
+  height: 210px;
+}
+.divf{
+    width:300px ;
+}
+.u{
+  flex-direction: column;
+}
+} */
